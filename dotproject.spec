@@ -4,6 +4,7 @@
 # - check if it works at all...
 #
 Summary:	PHP web-based project management framework
+Summary(pl):	Oparte na PHP i WWW ¶rodowisko do zarz±dzania projektami
 Name:		dotproject
 Version:	1.0.1
 Release:	0.1
@@ -13,6 +14,7 @@ Source0:	http://dl.sourceforge.net/dotproject/%{name}_%{version}.tar.gz
 # Source0-md5:	7387852573613bb6d4fc4e592b76c69a
 Patch0:		%{name}-system_PEAR.patch
 URL:		http://sourceforge.net/projects/dotproject/
+Requires:	php
 Requires:	php-gd
 Requires:	php-mysql
 Requires:	php-pear-Date
@@ -26,7 +28,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 PHP web-based project management framework that includes modules for
 companies, projects, tasks (with Gantt charts), forums, files,
 calendar, contacts, tickets/helpdesk, multi-language support,
-user/module permissions and themes
+user/module permissions and themes.
+
+%description -l pl
+Oparte na PHP i WWW ¶rodowisko do zarz±dzania projektami zawieraj±ce
+modu³y dla firm, projektów, zadañ (z wykresami Gantta), forum, plików,
+kalendarza, kontaktór, biletów/helpdesku, obs³ugê wielu jêzyków,
+uprawnienia u¿ytkowników do modu³ów oraz motywy.
 
 %prep
 %setup -q -n %{name}
