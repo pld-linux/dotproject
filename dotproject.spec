@@ -1,5 +1,5 @@
 # TODO:
-# - use system PEAR
+# - use system PEAR [ done, needs tests]
 # - add lang packs from http://sourceforge.net/projects/dotmods/
 # - check if it works at all...
 #
@@ -11,9 +11,11 @@ License:	BSD
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/dotproject/%{name}_%{version}.tar.gz
 # Source0-md5:	7387852573613bb6d4fc4e592b76c69a
+Patch0:		%{name}-system_PEAR.patch
 URL:		http://sourceforge.net/projects/dotproject/
 Requires:	php-gd
 Requires:	php-mysql
+Requires:	php-pear-Date
 Requires:	webserver
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,6 +30,7 @@ user/module permissions and themes
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -54,6 +57,9 @@ install locales/en/* $RPM_BUILD_ROOT%{_phpdir}/locales/en
 rm $RPM_BUILD_ROOT%{_phpdir}/includes/config-dist.php
 install includes/config-dist.php $RPM_BUILD_ROOT%{_sysconfdir}/httpd/%{name}/config.php
 ln -s %{_sysconfdir}/httpd/%{name}/config.php $RPM_BUILD_ROOT%{_phpdir}/includes/config.php
+
+# and remove PEAR's Date class that comes with the archive
+rm -rf $RPM_BUILD_ROOT%{_phpdir}/lib/PEAR
 
 %clean
 rm -rf $RPM_BUILD_ROOT
