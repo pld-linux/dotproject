@@ -33,7 +33,7 @@ user/module permissions and themes.
 %description -l pl
 Oparte na PHP i WWW ¶rodowisko do zarz±dzania projektami zawieraj±ce
 modu³y dla firm, projektów, zadañ (z wykresami Gantta), forum, plików,
-kalendarza, kontaktór, biletów/helpdesku, obs³ugê wielu jêzyków,
+kalendarza, kontaktów, biletów/helpdesku, obs³ugê wielu jêzyków,
 uprawnienia u¿ytkowników do modu³ów oraz motywy.
 
 %prep
