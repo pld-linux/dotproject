@@ -4,7 +4,7 @@
 # - check if it works at all...
 #
 Summary:	PHP web-based project management framework
-Summary(pl.UTF-8):   Oparte na PHP i WWW środowisko do zarządzania projektami
+Summary(pl.UTF-8):	Oparte na PHP i WWW środowisko do zarządzania projektami
 Name:		dotproject
 Version:	1.0.1
 Release:	0.2
