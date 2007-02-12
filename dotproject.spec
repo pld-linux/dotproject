@@ -4,7 +4,7 @@
 # - check if it works at all...
 #
 Summary:	PHP web-based project management framework
-Summary(pl):	Oparte na PHP i WWW ¶rodowisko do zarz±dzania projektami
+Summary(pl.UTF-8):   Oparte na PHP i WWW Å›rodowisko do zarzÄ…dzania projektami
 Name:		dotproject
 Version:	1.0.1
 Release:	0.2
@@ -30,11 +30,11 @@ companies, projects, tasks (with Gantt charts), forums, files,
 calendar, contacts, tickets/helpdesk, multi-language support,
 user/module permissions and themes.
 
-%description -l pl
-Oparte na PHP i WWW ¶rodowisko do zarz±dzania projektami zawieraj±ce
-modu³y dla firm, projektów, zadañ (z wykresami Gantta), forum, plików,
-kalendarza, kontaktów, biletów/helpdesku, obs³ugê wielu jêzyków,
-uprawnienia u¿ytkowników do modu³ów oraz motywy.
+%description -l pl.UTF-8
+Oparte na PHP i WWW Å›rodowisko do zarzÄ…dzania projektami zawierajÄ…ce
+moduÅ‚y dla firm, projektÃ³w, zadaÅ„ (z wykresami Gantta), forum, plikÃ³w,
+kalendarza, kontaktÃ³w, biletÃ³w/helpdesku, obsÅ‚ugÄ™ wielu jÄ™zykÃ³w,
+uprawnienia uÅ¼ytkownikÃ³w do moduÅ‚Ã³w oraz motywy.
 
 %prep
 %setup -q -n %{name}
